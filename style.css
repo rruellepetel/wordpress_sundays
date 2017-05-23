@@ -1,0 +1,259 @@
+/* Theme Name: sundays
+Author: romain
+Description: Theme Sundays.
+*/
+
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #281400;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  header .btn {
+    font-size: 1.1em;
+    color: white;
+    text-transform: uppercase;
+    font-family: monospace;
+    padding: 1.3em 5em;
+    background-color: #A28F61;
+    border-radius: 3px; }
+  header .fa-search {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: white; }
+  header .fa-chevron-down {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: white; }
+  header nav {
+    width: 100%; }
+    header nav ul {
+      width: 40%;
+      list-style: none;
+      padding: 0;
+      margin: 0.5em auto 0;
+      display: flex;
+      justify-content: space-around;
+      font-family: sans-serif;
+      font-size: 1.7em; }
+      header nav ul li {
+        padding: 0 8px; }
+        header nav ul li a {
+          font-family: Arial;
+          font-weight: 100;
+          color: #C9B59F; }
+  header .brand {
+    margin: 16em;
+    text-align: center; }
+    header .brand .slogan {
+      max-width: 550px;
+      display: flex;
+      margin-bottom: 1.5em;
+      text-align: center;
+      font-size: 2.5em; }
+    header .brand h1 {
+      text-transform: uppercase;
+      margin-bottom: 0.5em;
+      text-align: center;
+      font-size: 4em; }
+
+main img {
+  width: 200px;
+  height: 250px;
+  max-width: 100%; }
+main h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: fantasy;
+  margin-top: 1.8em; }
+main ul {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1390px; }
+  main ul li {
+    margin-bottom: 1em;
+    list-style: none;
+    box-shadow: 0 5px 20px lightblue;
+    position: relative; }
+    main ul li h3 {
+      font-family: monospace;
+      font-weight: bolder;
+      font-size: 1.8em;
+      padding: 0.5em 0 0 0.5em;
+      text-transform: uppercase; }
+      main ul li h3.buy {
+        color: #A29274; }
+      main ul li h3.on-sale {
+        color: #FFD52F; }
+      main ul li h3.sold-out {
+        color: #99A8B3; }
+    main ul li .description {
+      color: #778899;
+      display: block;
+      padding-left: 0.5em; }
+    main ul li .price {
+      color: #2F4F4F;
+      display: flex;
+      padding: 0 0 0.5em 0.5em; }
+
+footer {
+  background-color: #0F3E57;
+  margin-top: 5em; }
+  footer nav {
+    padding: 3em 0 1em;
+    margin: auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-around; }
+    footer nav h4 {
+      color: white;
+      font-size: 1.5em;
+      margin-bottom: 1em; }
+    footer nav ul {
+      padding: 0; }
+      footer nav ul li {
+        list-style: none; }
+        footer nav ul li span.fa {
+          padding-right: 10px; }
+    footer nav a {
+      color: #C9B59F;
+      line-height: 2.5em; }
+    footer nav input {
+      border-radius: 7px;
+      border: 3px solid #C9B59F;
+      padding: 0.2em; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border-radius: 7px;
+  border: 2px solid #C9B59F;
+  padding: 0.2em;
+  background: transparent;
+  color: white; }
+
+body {
+  font-family: 'open sans'; }
+
+img {
+  max-width: 60%; }
+
+.preview {
+  display: flex;
+  flex-direction: column; }
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+
+.preview-thumbnail.nav-tabs li {
+  width: 18%;
+  margin-right: 2.5%; }
+
+.preview-thumbnail.nav-tabs li img {
+  max-width: 100%;
+  display: block; }
+
+.preview-thumbnail.nav-tabs li a {
+  padding: 0;
+  margin: 0; }
+
+.preview-thumbnail.nav-tabs li:last-of-type {
+  margin-right: 0; }
+
+.tab-content {
+  overflow: hidden; }
+
+.tab-content img {
+  width: 100%;
+  animation-name: opacity;
+  animation-duration: .3s; }
+
+.card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em; }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: flex; } }
+.product-title, .price, .sizes, .colors {
+  font-weight: bold;
+  font-size: 1.5em; }
+
+.checked, .price span {
+  color: #ff9f1a; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.size {
+  margin-right: 10px; }
+
+.size:first-of-type {
+  margin-left: 40px; }
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px; }
+
+.color:first-of-type {
+  margin-left: 20px; }
+
+.add-to-cart, .like {
+  background: #ff9f1a;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  transition: background .3s ease; }
+
+.add-to-cart:hover, .like:hover {
+  background: #b36800;
+  color: #fff; }
+
+.not-available {
+  text-align: center;
+  line-height: 2em; }
+
+.not-available:before {
+  font-family: fontawesome;
+  content: "\f00d";
+  color: #fff; }
+
+.orange {
+  background: #ff9f1a; }
+
+.green {
+  background: #85ad00; }
+
+.blue {
+  background: #0076ad; }
+
+.red {
+  background: red; }
+
+.tooltip-inner {
+  padding: 1.3em; }
+
+/*# sourceMappingURL=style.css.map */
