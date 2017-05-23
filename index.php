@@ -1,5 +1,8 @@
 <?php
 get_header();?>
+<main>
+<h2>Spring Summer 2017</h2>
+<ul>
 
 <?php
 
@@ -11,20 +14,22 @@ foreach ($cats as $cat) {
 
      foreach ($posts as $post) {
         setup_postdata($post);
-        the_title('<h3>', '</h3>');
-        the_excerpt();
-        the_meta();
 
-        $mykey_values = get_post_custom_values('Price');
-        foreach ($mykey_values as $value) {
-        }
+        ?>
+        <li>
+                        <a href="#">
+                            <img src="http://lorempixel.com/175/240" alt="buy">
+                            <h3 class="buy"><?php the_category() ?></h3>
+                            <span class="description"><?php the_title() ?></span>
+                            <span class="price"><?php the_meta() ?></span>
+                        </a>
+                    </li>
+<?php
     }
 }
-
- ?>
-
-
-
+?>
+</ul>
+</main>
 
 <?php
 get_footer();?>

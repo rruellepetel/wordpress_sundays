@@ -79,7 +79,9 @@ main ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 1390px; }
+  /*max-width: 1390px; */
+}
+
   main ul li {
     margin-bottom: 1em;
     list-style: none;
