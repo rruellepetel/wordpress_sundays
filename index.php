@@ -17,12 +17,12 @@ foreach ($cats as $cat) {
 
         ?>
         <li>
-                        <a href="#">
+                    
                             <img src="http://lorempixel.com/175/240" alt="buy">
                             <h3 class="buy"><?php the_category() ?></h3>
                             <span class="description"><?php the_title() ?></span>
                             <span class="price"><?php the_meta() ?></span>
-                        </a>
+
                     </li>
 <?php
     }
