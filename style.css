@@ -13,6 +13,8 @@ h4 {
 p {
     text-align: center;
     margin-top: 2em;
+    border: 3px solid lightgrey;
+    padding: 2em;
 }
 
 .permalink {
@@ -291,82 +293,83 @@ img {
     .wrapper {
         display: flex;
     }
+    .description {
+        text-align: center;
+        font-size: 1.3em;
+        text-decoration: underline;
+    }
+    .product-title, .price, .sizes, .colors {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-left: -2.7em;
+        margin-top: 2em;
+    }
+
+    .checked, .price span {
+        color: #ff9f1a;
+    }
+
+    .color {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        height: 2em;
+        width: 2em;
+        border-radius: 2px;
+    }
+
+    .color:first-of-type {
+        margin-left: 20px;
+    }
+
+    .add-to-cart, .like {
+        background: #ff9f1a;
+        padding: 1.2em 1.5em;
+        border: none;
+        text-transform: UPPERCASE;
+        font-weight: bold;
+        color: #fff;
+        transition: background .3s ease;
+    }
+
+    .add-to-cart:hover, .like:hover {
+        background: #b36800;
+        color: #fff;
+    }
+
+    .not-available {
+        text-align: center;
+        line-height: 2em;
+    }
+
+    .not-available:before {
+        font-family: fontawesome;
+        content: "\f00d";
+        color: #fff;
+    }
+
+    .orange {
+        background: #ff9f1a;
+    }
+
+    .green {
+        background: #85ad00;
+    }
+
+    .blue {
+        background: #0076ad;
+    }
+
+    .red {
+        background: red;
+    }
+
+    .tooltip-inner {
+        padding: 1.3em;
+    }
 }
 
-.description {
-    text-align: center;
-    font-size: 1.3em;
-}
 
-.product-title, .price, .sizes, .colors {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-left: -2.7em;
-    margin-top: 2em;
-}
-
-.checked, .price span {
-    color: #ff9f1a;
-}
-
-.color {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    height: 2em;
-    width: 2em;
-    border-radius: 2px;
-}
-
-.color:first-of-type {
-    margin-left: 20px;
-}
-
-.add-to-cart, .like {
-    background: #ff9f1a;
-    padding: 1.2em 1.5em;
-    border: none;
-    text-transform: UPPERCASE;
-    font-weight: bold;
-    color: #fff;
-    transition: background .3s ease;
-}
-
-.add-to-cart:hover, .like:hover {
-    background: #b36800;
-    color: #fff;
-}
-
-.not-available {
-    text-align: center;
-    line-height: 2em;
-}
-
-.not-available:before {
-    font-family: fontawesome;
-    content: "\f00d";
-    color: #fff;
-}
-
-.orange {
-    background: #ff9f1a;
-}
-
-.green {
-    background: #85ad00;
-}
-
-.blue {
-    background: #0076ad;
-}
-
-.red {
-    background: red;
-}
-
-.tooltip-inner {
-    padding: 1.3em;
-}
 
 
 /*# sourceMappingURL=style.css.map */

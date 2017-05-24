@@ -18,7 +18,7 @@
                 <li><a href="<?php echo get_home_url()?>">Catalog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Stores</a></li>
-                <li><a href="<?php echo get_home_url('template_blog.php')?>">Blog</a></li>
+                <li><a href="<?php echo get_page_link(57); ?>">Blog</a></li>
             </ul>
         </nav>
         <section class="brand">

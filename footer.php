@@ -18,9 +18,25 @@
             </section>
             <section>
                 <h4>Newsletter</h4>
-                <form action="#">
-                    <input type="email" placeholder="Your Email ...">
-                    <button type="button" name="button">OK</button>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Your Email ..." name="email">
+                    <button type="submit" name="button">OK</button>
+                    <?php if (isset($_POST["email"])) {
+                        echo "<p>Votre email a été enregistré</p>";
+
+                        $wpdb->insert(
+
+                            'wp-email',
+
+                            array(
+
+                                'email' =>  $_POST["email"]
+
+                            )
+
+                        );
+                    } ?>
+
                 </form>
             </section>
             <section>
