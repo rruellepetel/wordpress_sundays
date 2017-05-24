@@ -15,13 +15,12 @@
         <a href="#"><span class="fa fa-chevron-down"></span></a>
         <nav>
             <ul>
-                <li><a href="produit.html">Catalog</a></li>
-                <li><a href="contact.html">About Us</a></li>
-                <li><a href="panier.html">Stores</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="<?php echo get_home_url()?>">Catalog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="<?php echo get_home_url('template_blog.php')?>">Blog</a></li>
             </ul>
         </nav>
-
         <section class="brand">
             <h1>Sundays</h1>
             <span class="slogan">We craft ocean friendly apparel</span>

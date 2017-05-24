@@ -13,7 +13,7 @@ get_header();
         <article>
             <p><?php echo get_post_field('post_content');?> a</p>
             <h4><?php the_meta() ?></h4>
-            <button type="button" name="button">Ajouter au panier</button>
+            <button type="button" name="button" class="add-to-cart">Add To Cart</button>
         </article>
 </main>
 <?php
