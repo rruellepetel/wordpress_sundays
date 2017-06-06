@@ -22,7 +22,8 @@ get_header();?>
                             <img src="http://lorempixel.com/175/240" alt="buy">
                             <h3 class="buy"><?php the_category() ?></h3>
                             <span class="description"><?php the_title() ?></span>
-                            <span class="price"><?php the_meta() ?></span>
+                            <!-- <span class="price"><?php the_meta() ?></span> -->
+                            <div class="price"><?php echo "Price : ". get_field('Price'); ?></div>
                             <a href="<?php echo get_permalink($post->id) ?>"class="permalink">More</a>
 
                     </li>
